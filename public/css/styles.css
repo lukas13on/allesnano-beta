@@ -1,3 +1,56 @@
-.navbar-brand .brand-img{
+.navbar-brand .brand-img {
     height: 80px;
+}
+
+.bg-success{
+    background-color: aquamarine;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+    font-weight: bold !important;
+}
+
+header nav {
+    padding: 20px 40px !important;
+}
+
+section {
+    padding: 10vw 0 !important;
+}
+
+#segmentos {
+    padding: 20px !important;
+}
+
+#segmentos .card-body {
+    text-align: center;
+}
+
+#seinao{
+    padding: 0px !important;
+}
+
+#inicio {
+    background-image: url("../img/cover/01.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-image img {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax.parallax-one {
+    height: 100vh;
+    background-image: url("../img/background/04.jpg");
+    border-radius: 0;
 }
