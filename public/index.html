@@ -35,7 +35,7 @@
     <!-- Inicio da página -->
 
     <!-- Inicio do cabeçalho -->
-    <header>
+    <header class="container">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
@@ -53,26 +53,26 @@
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="#inicio">Início</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quem somos</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#nossas-solucoes">Nossas soluções</a>
+                        <a class="nav-link" href="#solucoes">Soluções</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
 
                 </ul>
 
             </div>
 
-            <div class="text-center text-lg-left">
+            <div class="d-none d-lg-flex text-center text-lg-left">
                 <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
             </div>
 
@@ -258,11 +258,20 @@
                     <div class="col-1"></div>
 
                     <div class="col-12 col-lg my-auto">
-                        <h1 class="display-1 text-center text-lg-right">Lorem ipsum dolor</h1>
+                        <h1 class="display-1 text-center text-lg-right">História</h1>
                         <div class="text-wrapper">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quidem cumque. Ea
-                                neque, consectetur nostrum eligendi molestias officia, provident eaque dignissimos
-                                accusantium magnam ipsam nesciunt ab quam. Veniam, consectetur rem?</p>
+
+                            <p class="border-bottom pb-2">Fundada em Dezembro de 2021, a AllesNano (do alemão Alles,
+                                tudo e Nano, nanotecnologia)
+                                está localizada no condomínio
+                                Industrial de Toledo, anexo ao Biopark.</p>
+
+                            <p>Contando com uma equipe permanente de
+                                profissionais qualificados, fabricamos
+                                aditivos biológicos para a área agrícola, aditivos fitogênicos para saúde animal,
+                                cosméticos naturais, produtos de
+                                perfumaria e higiene pessoal.</p>
+
                         </div>
                     </div>
 
@@ -272,8 +281,35 @@
         </section>
         <!-- Fim de seção de seila-->
 
+        <!-- Inicio seção seinao -->
+        <section class="bg-white p-0" id="">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-1"></div>
+
+                    <div class="col-12 col-lg my-auto">
+                        <h1 class="display-1 text-center text-lg-left">Lorem ipsum dolor</h1>
+                        <div class="text-wrapper">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga sed qui non hic animi
+                                dolores cum nulla officiis consequatur maxime neque incidunt voluptate, deleniti autem
+                                inventore eos fugit libero.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg parallax parallax-one">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim seção seinao -->
+
         <!-- Inicio Seção nossas soluções -->
-        <section id="nossas-solucoes">
+        <section class="bg-light" id="solucoes">
 
             <div class="container">
 
@@ -433,7 +469,7 @@
         <!-- Fim Seção nossas soluções -->
 
         <!-- Inicio seção seinao -->
-        <section class="bg-light" id="seinao">
+        <section class="bg-white p-0" id="">
             <div class="container-fluid">
 
                 <div class="row">
@@ -459,10 +495,114 @@
         </section>
         <!-- Fim seção seinao -->
 
+        <!-- Inicio seção contato -->
+        <section class="container">
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h1 class="display-1 text-center text-lg-left">Contato</h1>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-lg-6">
+                    <img class="w-100" src="img/background/01.jpg" alt="Contato">
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <form class="form-row" method="POST" action="">
+
+                        <div class="col-12 col-lg-6 form-group">
+                            <label>Nome completo</label>
+                            <input class="form-control" type="text" placeholder="Informe seu nome completo">
+                        </div>
+
+                        <div class="col-12 col-lg-6 form-group">
+                            <label>Nome da empresa</label>
+                            <input class="form-control" type="text" placeholder="Informe o nome da empresa">
+                        </div>
+
+                        <div class="col-12 col-lg-6 form-group">
+                            <label>Telefone ou celular</label>
+                            <input class="form-control" type="text" placeholder="Informe um número para contato">
+                        </div>
+
+                        <div class="col-12 col-lg-6 form-group">
+                            <label>Endereço de e-mail</label>
+                            <input class="form-control" type="text" placeholder="Informe um endereço válido">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Mensagem</label>
+                            <textarea class="form-control" placeholder="Informe a sua mensagem"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim seção contato -->
+
+        <!-- Inicio da seção parceiros -->
+        <section class="container" id="parceiros">
+            <div class="row justify-content-center my-4">
+
+                <div class="col-12 text-center">
+                    <h5 class="mb-4">Uma empresa parceira</h5>
+                </div>
+
+                <div class="col-auto my-auto">
+                    <a href="">
+                        <img class="logo-logo logo-biopark" src="img/logo/biopark.svg" alt="Biopark">
+                    </a>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-auto my-auto">
+                    <a href="">
+                        <img class="logo-logo logo-heidi" src="img/logo/heidi.png" alt="Heidi">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim da seção parceiros -->
+
     </main>
     <!-- Fim do conteúdo -->
 
-    <footer></footer>
+    <footer class="container-fluid bg-dark text-white" id="rodape">
+        <div class="container bg-secondary">
+            <div class="row ">
+
+                <div class="col-12 col-lg-6">
+
+                    <div class="google-map">
+                        <div class="map-controls text-right">
+                            <a class="btn btn-sm btn-light" href="">Como chegar</a>
+                        </div>
+                        <div class="map-frame">
+                            <iframe class="w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.491271993451!2d-53.71323362305685!3d-24.618490919291666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3bd3658fec82d%3A0x9298e43c320c4a86!2zQmlvcGFyayBFZHVjYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1655166791294!5m2!1spt-BR!2sbr"
+                                width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <span>Institucoinal</span>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <span>Siga nas redes</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <!-- Fim da página -->
 

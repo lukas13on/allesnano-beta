@@ -22,8 +22,16 @@ section {
     padding: 20px !important;
 }
 
+#parceiros{
+    padding:2.5vw !important;
+}
+
 #segmentos .card-body {
     text-align: center;
+}
+
+#rodape{
+    padding-top: 10vh;
 }
 
 #seinao{
@@ -53,4 +61,18 @@ section {
     height: 100vh;
     background-image: url("../img/background/04.jpg");
     border-radius: 0;
+}
+
+
+.google-map {
+    padding-top: 15px;
+}
+
+.google-map .map-controls {position: absolute;top: 25px;right: 25px;}
+
+.google-map .map-frame {}
+
+.map-controls a {
+    border-radius: 0.25rem;
+    font-weight: bold;
 }
