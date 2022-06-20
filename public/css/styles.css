@@ -29,13 +29,14 @@ body{
     margin-bottom: 20px;
     word-break: break-word;
     position: relative;
+    color: #ff8a00;
 }
 
 header nav {
     padding: 20px 40px !important;
 }
 
-section {
+section, .section {
     padding: 10vw 0 !important;
     display: block;
     overflow: hidden;
@@ -283,12 +284,14 @@ section#parceiros {}
 
 #rodape .block-title {
     font-size: 20px;
+    color: #ff8a00;
 }
 
 #rodape .btn-link {
     text-align: left;
-    color: #f80;
+    color: #000000;
     text-decoration: none;
+    font-size: 18px !important;
 }
 
 #rodape .btn-link:hover, #rodape .btn-link:active, #rodape .btn-link:focus {
@@ -297,13 +300,13 @@ section#parceiros {}
 
 .display-icon:before {
     content:
-    "";
+    "\f140";
     position: absolute;
     top: -64px;
-    width: 64px;
-    height: 64px;
-    background-image: url("../img/icon/seeds.png");
     background-size: cover;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 64px;
 }
 
 .display-icon.icon-right:before {
@@ -320,4 +323,37 @@ section#parceiros {}
 
 .side-text.side-right {
     padding-right: 40px;
+}
+
+.image-01 {
+    background-image: url("../img/bg/01.jpg");
+}
+
+.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 20px;
+}
+
+.image-02 {
+    background-image: url("../img/bg/02.jpg");
+}
+
+.image-03 {
+    background-image: url("../img/bg/03.jpg");
+}
+
+.parallax {
+    border-radius: .25rem;
+    overflow: hidden;
+    box-shadow: -40px 40px 0px 6px #dddcd8;
+    border: 5px solid #ff8a00;
+}
+
+.image-04 {}
+
+#solucoes .card-title {
+    color: #ff8a00;
+    font-weight: bold;
 }
