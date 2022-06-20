@@ -289,7 +289,7 @@ section#parceiros {}
 
 #rodape .btn-link {
     text-align: left;
-    color: #000000;
+    color: #6c757d;
     text-decoration: none;
     font-size: 18px !important;
 }
@@ -347,8 +347,7 @@ section#parceiros {}
 .parallax {
     border-radius: .25rem;
     overflow: hidden;
-    box-shadow: -40px 40px 0px 6px #dddcd8;
-    border: 5px solid #ff8a00;
+    box-shadow: -20px 20px 0px 6px #dddcd8;
 }
 
 .image-04 {}
