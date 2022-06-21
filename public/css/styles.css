@@ -81,6 +81,8 @@ section, .section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: .25rem;
+    overflow: hidden;
 }
 
 .parallax.parallax-one {
@@ -258,7 +260,7 @@ section#parceiros {}
 
 #segmentos .card-title {
     /* color: #f80; */
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .side-text .side-left {
@@ -347,12 +349,40 @@ section#parceiros {}
 .parallax {
     border-radius: .25rem;
     overflow: hidden;
-    box-shadow: -20px 20px 0px 6px #dddcd8;
+    box-shadow: -20px 20px 0px 6px #ff8a00;
+    background: #ff8a00;
 }
+
+.col-12.col-lg.parallax.parallax-one {}
 
 .image-04 {}
 
 #solucoes .card-title {
     color: #ff8a00;
     font-weight: bold;
+}
+
+.image-00 {
+    background-image: url("../img/bg/00.jpg");
+}
+
+.list-inline li {
+    display: inline-block;
+}
+
+#rodape .btn span {
+    display: inline-block;
+}
+
+.bg-white [class*="display"] {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.bg-white .display-icon:before {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+#rodape .btn span i {
+    font-size: 22px;
+    vertical-align: bottom;
 }
