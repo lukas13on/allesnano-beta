@@ -27,9 +27,9 @@ body{
 .display-1, .display-2, .display-3, .display-4 {
     font-weight: bold !important;
     margin-bottom: 20px;
-    word-break: break-word;
     position: relative;
     color: #ff8a00;
+    word-break: break-word;
 }
 
 header nav {
@@ -96,7 +96,7 @@ section, .section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/background/04.jpg);
+    background-image: url(../img/photos/machine/10.jpg);
     background-size: cover;
 }
 
@@ -260,7 +260,7 @@ section#parceiros {}
 
 #segmentos .card-title {
     /* color: #f80; */
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 .side-text .side-left {
@@ -372,6 +372,7 @@ section#parceiros {}
 
 #rodape .btn span {
     display: inline-block;
+    margin: 0 1px;
 }
 
 .bg-white [class*="display"] {
@@ -383,6 +384,15 @@ section#parceiros {}
 }
 
 #rodape .btn span i {
-    font-size: 22px;
+    font-size: 26px;
     vertical-align: bottom;
+}
+
+.bg-light {background: rgb(255,255,255);background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(221,221,221,1) 100%);border-bottom: 1px solid #ddd;}
+
+.image-card {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 20px 20px 0px 6px #ff8a00;
+    background: transparent;
 }
