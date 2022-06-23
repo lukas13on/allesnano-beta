@@ -77,27 +77,16 @@ section, .section {
 }
 
 .parallax:before {
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .25rem;
-    overflow: hidden;
-}
-
-.parallax.parallax-one {
-    height: auto;
-}
-
-.parallax.parallax-one:before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/photos/machine/10.jpg);
     background-size: cover;
+    overflow: hidden;
+    background-position: center top;
+    background-attachment: fixed;
 }
 
 
@@ -161,7 +150,10 @@ section#parceiros {}
     border-radius: inherit;
 }
 
-.question-item .question-title {}
+.question-item .question-title {
+    position: relative;
+    padding-left: 20px;
+}
 
 .question-item.active .question-title {
     color: #fff3e5;
@@ -176,7 +168,7 @@ section#parceiros {}
 
 .question-item.active .question-answer {
     display: block;
-    color: #fff3e5;
+    color: #ffffff;
 }
 
 .question-item .question-answer p {
@@ -351,9 +343,8 @@ section#parceiros {}
     overflow: hidden;
     box-shadow: -20px 20px 0px 6px #ff8a00;
     background: #ff8a00;
+    height: auto;
 }
-
-.col-12.col-lg.parallax.parallax-one {}
 
 .image-04 {}
 
@@ -388,11 +379,43 @@ section#parceiros {}
     vertical-align: bottom;
 }
 
-.bg-light {background: rgb(255,255,255);background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(221,221,221,1) 100%);border-bottom: 1px solid #ddd;}
-
 .image-card {
     border-radius: 0.25rem;
     overflow: hidden;
     box-shadow: 20px 20px 0px 6px #ff8a00;
     background: transparent;
+}
+
+.parallax.parallax-one:before {
+    background-image: url(../img/photos/landscape/04.jpg);
+    background-position: center center;
+}
+
+.parallax.parallax-two:before {
+    background-image: url(../img/photos/machine/10.jpg);
+}
+
+.parallax.parallax-three:before {
+    background-image: url(../img/photos/machine/10.jpg);
+}
+
+.question-item.active .question-title:before {
+    content: "\f078";
+}
+
+.question-item .question-title:before {
+    content: "\f140";
+}
+
+.question-item .question-title:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-size: cover;
+    font-family:
+    "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 16px;
+    content: "\f054";
 }
