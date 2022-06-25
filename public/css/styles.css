@@ -85,8 +85,8 @@ section, .section {
     height: 100%;
     background-size: cover;
     overflow: hidden;
-    background-position: center top;
-    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 
@@ -387,8 +387,7 @@ section#parceiros {}
 }
 
 .parallax.parallax-one:before {
-    background-image: url(../img/photos/landscape/04.jpg);
-    background-position: center center;
+    background-image: url(../img/photos/chemistry/01.jpg);
 }
 
 .parallax.parallax-two:before {
@@ -396,7 +395,7 @@ section#parceiros {}
 }
 
 .parallax.parallax-three:before {
-    background-image: url(../img/photos/machine/10.jpg);
+    background-image: url(../img/photos/action/01.jpg);
 }
 
 .question-item.active .question-title:before {
