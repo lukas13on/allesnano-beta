@@ -1,6 +1,18 @@
 $(document).ready(function () {
+    headerClass();
     scrollPsy();
 });
+
+function headerClass() {
+    $(window).on('scroll', function () {
+        var top = $(window).scrollTop();
+        if (top === 0) {
+            $("body").addClass("scroll-top").removeClass("scroll-scrolled");
+        } else {
+            $("body").addClass("scroll-scrolled").removeClass("scroll-top");
+        }
+    });
+}
 
 function scrollPsy() {
     $(window).on('scroll', function () {
