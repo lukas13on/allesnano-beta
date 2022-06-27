@@ -18,6 +18,7 @@ body{
 
 .navbar-brand .brand-img {
     height: 80px;
+    transition: all 0.25s linear;
 }
 
 .bg-success{
@@ -252,7 +253,6 @@ section#parceiros {}
 
 #segmentos .card-title {
     /* color: #f80; */
-    font-weight: bold;
 }
 
 .side-text .side-left {
@@ -421,8 +421,10 @@ section#parceiros {}
 
 header {
     position: fixed;
-    background-color: #fff;
     z-index: 9999;
+    background-color: #fff;
+    transition: 0.25s linear;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
 }
 
 #contato {
@@ -433,4 +435,18 @@ header {
 
 #contato .bg-image {
     padding-bottom: 100px;
+}
+
+.scroll-top header {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.scroll-top .navbar-brand .brand-img {
+    height: 110px;
+}
+
+#segmentos .card-title {
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
 }
