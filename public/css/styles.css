@@ -301,7 +301,7 @@ section#parceiros {}
 }
 
 .display-icon.icon-03:before {
-    content:"\f560";
+    content:"\e596";
 }
 
 .display-icon.icon-04:before {
@@ -453,7 +453,7 @@ header {
     z-index: 9999;
     background-color: #fff;
     transition: 0.25s linear;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
+    box-shadow: 0px 6px 6px 0px rgb(0 0 0 / 10%);
 }
 
 #contato {
@@ -486,4 +486,8 @@ header {
 
 .display-icon.icon-primary:before {
     color: #ff8a00;
+}
+
+.parallax.shadow-top {
+    box-shadow: -20px -20px 0px 6px #ffffff;
 }
