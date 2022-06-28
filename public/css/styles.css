@@ -292,15 +292,42 @@ section#parceiros {}
     color: rgba(0,0,0,.5);
 }
 
+.display-icon.icon-01:before {
+    content:"\e596";
+}
+
+.display-icon.icon-02:before {
+    content:"\e596";
+}
+
+.display-icon.icon-03:before {
+    content:"\e596";
+}
+
+.display-icon.icon-04:before {
+    content:"\e596";
+}
+
+.display-icon.icon-05:before {
+    content:"\e596";
+}
+
+.display-icon.icon-06:before {
+    content:"\e596";
+}
+
+.display-icon.icon-07:before {
+    content:"\e596";
+}
+
 .display-icon:before {
-    content:
-    "\f140";
     position: absolute;
     top: -64px;
     background-size: cover;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 64px;
+    color: #343a40;
 }
 
 .display-icon.icon-right:before {
@@ -320,7 +347,7 @@ section#parceiros {}
 }
 
 .image-01 {
-    background-image: url("../img/bg/01.jpg");
+    background-image: url("../img/bg/04.jpg");
 }
 
 .bg-image {
@@ -387,7 +414,7 @@ section#parceiros {}
 }
 
 .parallax.parallax-one:before {
-    background-image: url(../img/photos/chemistry/01.jpg);
+    background-image: url(../img/photos/chemistry/03.jpg);
 }
 
 .parallax.parallax-two:before {
@@ -447,6 +474,14 @@ header {
 }
 
 #segmentos .card-title {
-    color: rgba(0,0,0,.5);
     font-weight: bold;
+}
+
+.btn-outline-primary {
+    border-color: #ff8a00;
+    color: #ff8a00;
+}
+
+.display-icon.icon-primary:before {
+    color: #ff8a00;
 }
