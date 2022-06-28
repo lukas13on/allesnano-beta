@@ -157,7 +157,7 @@ section#parceiros {}
 }
 
 .question-item.active .question-title {
-    color: #fff3e5;
+    color: #ffffff;
 }
 
 .question-item .question-answer {
@@ -293,31 +293,31 @@ section#parceiros {}
 }
 
 .display-icon.icon-01:before {
-    content:"\e596";
+    content:"\f10e";
 }
 
 .display-icon.icon-02:before {
-    content:"\e596";
+    content:"\e2cd";
 }
 
 .display-icon.icon-03:before {
-    content:"\e596";
+    content:"\f560";
 }
 
 .display-icon.icon-04:before {
-    content:"\e596";
+    content:"\f004";
 }
 
 .display-icon.icon-05:before {
-    content:"\e596";
+    content:"\f059";
 }
 
 .display-icon.icon-06:before {
-    content:"\e596";
+    content:"\f5d0";
 }
 
 .display-icon.icon-07:before {
-    content:"\e596";
+    content:"\f1d8";
 }
 
 .display-icon:before {
@@ -347,14 +347,15 @@ section#parceiros {}
 }
 
 .image-01 {
-    background-image: url("../img/bg/04.jpg");
+    background-image: url("../img/vector/02.svg");
 }
 
 .bg-image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top left;
     padding: 20px;
+    /* background-image: none !IMPORTANT; */
 }
 
 .image-02 {
@@ -414,15 +415,16 @@ section#parceiros {}
 }
 
 .parallax.parallax-one:before {
-    background-image: url(../img/photos/chemistry/03.jpg);
+    background-image: url(../img/photos/landscape/07.jpg);
 }
 
 .parallax.parallax-two:before {
-    background-image: url(../img/photos/machine/10.jpg);
+    background-image: url(../img/photos/veterinary/00.jpg);
 }
 
 .parallax.parallax-three:before {
-    background-image: url(../img/photos/action/01.jpg);
+    background-image: url(../img/photos/cosmetic/00.jpg);
+    background-position: center 75%;
 }
 
 .question-item.active .question-title:before {
