@@ -72,9 +72,9 @@ section, .section {
 }
 
 .card-image img {
-    width: 64px;
-    height: 64px;
-    display: inline-block;
+    width: 64px !important;
+    height: 64px !important;
+    display: inline-block !important;
 }
 
 .parallax:before {
@@ -233,6 +233,7 @@ section#parceiros {}
 
 .list-group-item {
     border-color: #ff8800;
+    transition: all 0.25s linear;
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover {

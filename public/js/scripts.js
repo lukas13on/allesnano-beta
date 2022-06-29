@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
     scrollPsy();
+    carroselSegmentos();
+    listGroup();
 
     $(window).on("load scroll", function () {
         scrollPsy();
@@ -8,6 +10,31 @@ $(document).ready(function () {
     });
 
 });
+
+function carroselSegmentos() {
+    $("#segmentos .row").owlCarousel({
+        autoplay: true,
+        dots: false,
+        nav: false,
+        loop: true,
+        responsiveClass: true,
+        slideTransition: "linear",
+        autoplayTimeout: 3000,
+        autoplaySpeed: 10000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 3,
+            },
+            1024: {
+                items: 6,
+            },
+        },
+    });
+}
 
 function headerClass() {
     var top = $(window).scrollTop();
@@ -32,5 +59,13 @@ function scrollPsy() {
         } else {
             navLink.parent().removeClass('active');
         }
+    });
+}
+
+function listGroup() {
+    $(".list-group .list-group-item").on("click", function (e) {
+        e.preventDefault();
+        $(".list-group .list-group-item").removeClass("active");
+        $(this).addClass("active");
     });
 }
