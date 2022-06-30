@@ -49,6 +49,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+        <!-- sweetalert-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.19/sweetalert2.min.css" />
+
 </head>
 
 <body class="scroll-top">
@@ -77,19 +80,19 @@
                     <ul class="navbar-nav mx-auto">
 
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-lg btn-link" href="#inicio">Início</a>
+                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#inicio">Início</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link btn btn-lg btn-link" href="#sobre">Sobre</a>
+                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#sobre">Sobre</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link btn btn-lg btn-link" href="#duvidas">Duvidas</a>
+                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#produtos">Produtos</a>
                         </li>
-
+                        
                         <li class="nav-item">
-                            <a class="nav-link btn btn-lg btn-link" href="#produtos">Produtos</a>
+                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#duvidas">Duvidas</a>
                         </li>
 
                     </ul>
@@ -654,11 +657,13 @@
                                 <label>Nome completo</label>
                                 <input name="nome" class="form-control form-control-lg" type="text"
                                     placeholder="Informe seu nome completo">
-                                <div class="invalid-feedback">
-                                    sou um feedback invalido
+                                <div class="invalid-feedback alert alert-danger">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    <span>Insira um nome válido</span>
                                 </div>
-                                <div class="valid-feedback">
-                                    sou um feedback valido
+                                <div class="valid-feedback alert alert-success">
+                                    <span><i class="fa-solid fa-circle-check"></i></span>
+                                    <span>Campo valido</span>
                                 </div>
                             </div>
 
@@ -666,23 +671,27 @@
                                 <label>Nome da empresa</label>
                                 <input name="nomeEmpresa" class="form-control form-control-lg" type="text"
                                     placeholder="Informe o nome da empresa">
-                                <div class="invalid-feedback">
-                                    sou um feedback invalido
+                                <div class="invalid-feedback alert alert-danger">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    Insira uma empresa válida
                                 </div>
-                                <div class="valid-feedback">
-                                    sou um feedback valido
+                                <div class="valid-feedback alert alert-success">
+                                    <span><i class="fa-solid fa-circle-check"></i></span>
+                                    <span>Campo valido</span>
                                 </div>
                             </div>
 
                             <div class="col-12 col-lg-6 form-group">
-                                <label>Telefone ou celular</label>
-                                <input name="telefone" class="form-control form-control-lg" type="text"
-                                    placeholder="Informe um número para contato">
-                                <div class="invalid-feedback">
-                                    sou um feedback invalido
+                                <label>Telefone</label>
+                                <input name="telefone" class="form-control form-control-lg" type="tel"
+                                    placeholder="Informe um telefone ou celular">
+                                <div class="invalid-feedback alert alert-danger">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    Insira um telefone válido
                                 </div>
-                                <div class="valid-feedback">
-                                    sou um feedback valido
+                                <div class="valid-feedback alert alert-success">
+                                    <span><i class="fa-solid fa-circle-check"></i></span>
+                                    <span>Campo valido</span>
                                 </div>
                             </div>
 
@@ -690,23 +699,27 @@
                                 <label>Endereço de e-mail</label>
                                 <input name="email" class="form-control form-control-lg" type="text"
                                     placeholder="Informe um endereço válido">
-                                <div class="invalid-feedback">
-                                    sou um feedback invalido
+                                <div class="invalid-feedback alert alert-danger">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    Insira e-mail válido
                                 </div>
-                                <div class="valid-feedback">
-                                    sou um feedback valido
+                                <div class="valid-feedback alert alert-success">
+                                    <span><i class="fa-solid fa-circle-check"></i></span>
+                                    <span>Campo valido</span>
                                 </div>
                             </div>
 
                             <div class="col-12 form-group">
-                                <label>Mensagem</label>
+                                <label>Mensagem do contato</label>
                                 <textarea name="mensagem" class="form-control form-control-lg"
                                     placeholder="Informe a sua mensagem"></textarea>
-                                <div class="invalid-feedback">
-                                    sou um feedback invalido
+                                <div class="invalid-feedback alert alert-danger">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    Insira uma mensagem válida
                                 </div>
-                                <div class="valid-feedback">
-                                    sou um feedback valido
+                                <div class="valid-feedback alert alert-success">
+                                    <span><i class="fa-solid fa-circle-check"></i></span>
+                                    <span>Campo valido</span>
                                 </div>
                             </div>
 
@@ -867,6 +880,12 @@
 
     <!-- Owl Carrosel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Sweetalert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.19/sweetalert2.all.min.js"></script>
+
+    <!-- Jquery mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
     <!-- Scripts JS-->
     <script src="static/js/scripts.js"></script>

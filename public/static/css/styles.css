@@ -8,7 +8,7 @@ body{
     font-weight: bold;
 }
 
-.form-control, .navbar-nav .nav-link{
+.form-control, .navbar-nav .nav-link, .alert{
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -233,7 +233,7 @@ section#parceiros {}
 
 .list-group-item {
     border-color: #ff8800;
-    transition: all 0.25s linear;
+    transition: all 0s;
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover {
@@ -451,7 +451,7 @@ section#parceiros {}
 
 header {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     background-color: #fff;
     transition: 0.25s linear;
     box-shadow: 0px 6px 6px 0px rgb(0 0 0 / 10%);
@@ -491,4 +491,8 @@ header {
 
 .parallax.shadow-top {
     box-shadow: -20px -20px 0px 6px #ffffff;
+}
+
+#contato .invalid-feedback, #contato .valid-feedback {
+    margin: 4px 0 0 0;
 }

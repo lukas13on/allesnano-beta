@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    smothAnchor();
     scrollPsy();
     carroselSegmentos();
     listGroup();
@@ -65,7 +66,42 @@ function scrollPsy() {
 function listGroup() {
     $(".list-group .list-group-item").on("click", function (e) {
         e.preventDefault();
-        $(".list-group .list-group-item").removeClass("active");
-        $(this).addClass("active");
+        if (!$(this).hasClass("active")) {
+            $(".list-group .list-group-item").removeClass("active");
+            $(".list-group .list-group-item .content").slideUp();
+            $(this).find(".content").delay(100).slideDown();
+            $(this).delay(100).addClass("active");
+        }
     });
+}
+
+function smothAnchor() {
+    window.onhashchange = function (e) {
+        e.preventDefault();
+        return;
+    };
+    $('a[href*="#"][data-smoth="true"]').click(function (e) {
+        e.preventDefault();
+        var id = $(this).attr("href").replace("#", "");
+        var el = $("#" + id);
+        var headerTop = $("header").outerHeight();
+        var fixHeaderTop = 10;
+        if ($("body").hasClass("scroll-top")) {
+            // diferenca das logos
+            // 110 - 80 = 30
+            headerTop = headerTop - 30;
+        }
+        headerTop = headerTop - fixHeaderTop;
+        var elTop = el.offset().top - headerTop;
+        elTop = elTop < 0 ? 0 : elTop;
+        scrollSmoth(elTop, "slow", "linear", function () {
+            window.history.pushState({}, "", "#" + id);
+        });
+    });
+}
+
+function scrollSmoth(offset, delay, transition, callback) {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: offset
+    }, delay, transition, callback);
 }
