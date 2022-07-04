@@ -706,10 +706,3 @@ header {
   from {transform:rotate(0deg)}
   to {transform:rotate(-30deg)}
 }
-
-
-.button-block .btn {
-    display: block;
-    margin: 6px 0;
-    width: 100%;
-}
