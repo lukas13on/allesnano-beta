@@ -3,7 +3,6 @@
 
 <head>
     <!-- Recarrega a pagina para ver as edicoes em tempo real-->
-
     <!-- Codificação do arquivo -->
     <meta charset="UTF-8" />
 
@@ -49,8 +48,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-        <!-- sweetalert-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.19/sweetalert2.min.css" />
+    <!-- sweetalert-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.19/sweetalert2.min.css" />
 
 </head>
 
@@ -66,14 +66,18 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
 
-                <a class="navbar-brand" href=".">
-                    <img class="brand-img" src="static/img/logo.png" alt="Logo Allesnano" />
-                </a>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">
+                        <img class="brand-img" src="static/img/logo.png" alt="Logo Allesnano" />
+                    </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacao"
-                    aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navegacao" aria-controls="navegacao" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars open"></i>
+                        <i class="fa-solid fa-xmark close"></i>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navegacao">
 
@@ -90,9 +94,9 @@
                         <li class="nav-item">
                             <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#produtos">Produtos</a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#duvidas">Duvidas</a>
+                            <a class="nav-link btn btn-lg btn-link" data-smoth="true" href="#duvidas">Dúvidas</a>
                         </li>
 
                     </ul>
@@ -100,7 +104,7 @@
                 </div>
 
                 <div class="d-none d-lg-flex text-center text-lg-left">
-                    <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
+                    <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em contato</a>
                 </div>
 
             </nav>
@@ -239,7 +243,6 @@
                                     aditivos biológicos para a área agrícola, aditivos fitogênicos para saúde animal,
                                     cosméticos naturais, produtos de
                                     perfumaria e higiene pessoal.</p>
-
                             </div>
                         </div>
                     </div>
@@ -248,12 +251,12 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="text-center text-lg-right">
-                            <a href="#contato" class="btn btn-lg btn-outline-secondary">
+                        <div class="text-center text-lg-right button-block">
+                            <a href="#aditivos" data-smoth="true" class="btn btn-lg btn-outline-secondary">
                                 <span><i class="fa-solid fa-arrow-left-long"></i></span>
                                 <span>Continue conhecendo</span>
                             </a>
-                            <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
+                            <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em contato</a>
                         </div>
                     </div>
                 </div>
@@ -262,26 +265,28 @@
         </section>
         <!-- Fim de seção de seila-->
 
-        <!-- Inicio seção seinao -->
-        <section id="" class="bg-white p-0 ">
+        <!-- Inicio seção aditivos -->
+        <section id="aditivos" class="bg-white p-0 ">
             <div class="container-fluid bg-image image-01 section">
 
-                <div class="row">
+                <div class="row reverse-mobile">
 
                     <div class="col-12 col-lg my-auto">
 
                         <div class="side-box side-left">
                             <h1
                                 class="display-1 text-center text-lg-left text-dark display-icon icon-primary icon-02 icon-left display-margin">
-                                aditivos agricolas
+                                Aditivos <span class="d-none d-xl-inline-block">agrícolas</span>
                             </h1>
-                            <h2 class="display-4 text-center text-lg-left">aditivos agricolas
+                            <h2 class="display-4 text-center text-lg-left">A melhor opção para manter uma lavoura
+                                saudável e produtiva.
                             </h2>
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="text-center text-lg-left">
-                                        <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
-                                        <a href="#contato" class="btn btn-lg btn-secondary">
+                                    <div class="text-center text-lg-left button-block">
+                                        <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em
+                                            contato</a>
+                                        <a href="#produtos" data-smoth="true" class="btn btn-lg btn-secondary">
                                             <span>Continue conhecendo</span>
                                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                                         </a>
@@ -299,14 +304,14 @@
 
             </div>
         </section>
-        <!-- Fim seção seinao -->
+        <!-- Fim seção aditivos -->
 
         <!-- Inicio Seção nossas soluções -->
         <section id="produtos" class="bg-light">
 
             <div class="container">
 
-                <div class="row">
+                <div class="row reverse-mobile">
 
                     <div class="col-12 col-lg-6 mt-auto">
                         <div class="card mb-4">
@@ -318,11 +323,11 @@
 
                                 <h5 class="card-title">Aditivos agricolas</h5>
 
-                                <p class="card-text">Descrição.</p>
-
-                                <p class="card-text">
-                                    <small class="text-muted">Rodapé</small>
-                                </p>
+                                <p class="card-text">Através da utilização da nanotecnologia, produzimos aditivos
+                                    biológicos para a área agrícola. A nanotecnologia prevê a
+                                    proteção de ativos e a redução do tamanho de suas partículas, proporcionando maior
+                                    absorção do aditivo, pelas folhas e
+                                    pelo solo.</p>
 
                             </div>
 
@@ -339,13 +344,10 @@
                                     </h1>
                                     <h2 class="display-4 text-center text-lg-right text-dark">Para sua necessidade</h2>
                                     <div class="text-wrapper text-right">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae
-                                            laboriosam
-                                            ex,
-                                            doloremque voluptas expedita nesciunt reprehenderit, repellat illum beatae
-                                            deleniti
-                                            sapiente
-                                            enim fuga dolorem dolorum distinctio magnam voluptate! Reprehenderit.</p>
+                                        <p>Os produtos são realizados sob encomenda e são fabricados conforme as
+                                            especificações estabelecidas pelo cliente. Visando
+                                            sempre cumprir prazos e suprir suas necessidades e demandas.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -366,11 +368,9 @@
 
                                 <h5 class="card-title">Saúde animal</h5>
 
-                                <p class="card-text">Descrição.</p>
-
-                                <p class="card-text">
-                                    <small class="text-muted">Rodapé</small>
-                                </p>
+                                <p class="card-text">Produzimos aditivos fitogênicos de ativos naturais para nutrição
+                                    animal. O objetivo é garantir uma melhor absorção dos
+                                    nutrientes pelo animal, utilizando-se de nanotecnologia.</p>
 
                             </div>
 
@@ -387,10 +387,9 @@
 
                                 <h5 class="card-title">Cosméticos</h5>
 
-                                <p class="card-text">Descrição.</p>
-
-                                <p class="card-text">
-                                    <small class="text-muted">Rodapé</small>
+                                <p class="card-text">Nossa linha de cosméticos tem o segmento natural, sendo de nossa
+                                    produção: cosméticos de grau I: shampoo, condicionador,
+                                    sabonete líquido ou gel; e cosméticos de grau II: repelentes e gel anti sépticos.
                                 </p>
 
                             </div>
@@ -402,12 +401,12 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="text-center pt-5">
-                            <a href="#contato" class="btn btn-lg btn-outline-secondary">
+                        <div class="text-center pt-5 button-block">
+                            <a href="#saude-animal" data-smoth="true" class="btn btn-lg btn-outline-secondary">
                                 <span>Continue conhecendo</span>
                                 <span><i class="fa-solid fa-arrow-down-long"></i></span>
                             </a>
-                            <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
+                            <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em contato</a>
                         </div>
                     </div>
                 </div>
@@ -417,8 +416,8 @@
         </section>
         <!-- Fim Seção nossas soluções -->
 
-        <!-- Inicio seção seinao -->
-        <section id="" class="bg-white p-0">
+        <!-- Inicio seção saude-animal -->
+        <section id="saude-animal" class="bg-white p-0">
             <div class="container-fluid bg-image image-02 section">
 
                 <div class="row">
@@ -428,17 +427,19 @@
                         <div class="side-box side-left">
                             <h1
                                 class="display-1 text-center text-lg-left text-dark display-icon icon-primary icon-04 icon-left display-margin">
-                                saúde animal
+                                Saúde <span class="d-none d-xl-inline-block">animal</span>
                             </h1>
-                            <h2 class="display-4 text-center text-lg-left">saúde animal</h2>
+                            <h2 class="display-4 text-center text-lg-left">Alta tecnologia para o cuidado animal,
+                                visando melhor nutrição e suplementação.</h2>
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="text-center text-lg-left">
-                                        <a href="#contato" class="btn btn-lg btn-secondary">
+                                    <div class="text-center text-lg-left button-block">
+                                        <a href="#duvidas" data-smoth="true" class="btn btn-lg btn-secondary">
                                             <span>Continue conhecendo</span>
                                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                                         </a>
-                                        <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
+                                        <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em
+                                            contato</a>
                                     </div>
                                 </div>
                             </div>
@@ -453,14 +454,14 @@
 
             </div>
         </section>
-        <!-- Fim seção seinao -->
+        <!-- Fim seção saude animal -->
 
         <!-- Inicio seção duvidas frequentes -->
         <section id="duvidas" class="bg-light">
 
             <div class="container">
 
-                <div class="row">
+                <div class="row reverse-mobile">
 
                     <div class="col-12 col-lg-6">
 
@@ -468,19 +469,38 @@
                             <div class="col-12">
                                 <div class="list-group question-list">
 
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action flex-column align-items-start question-item">
+
+                                        <div class="question-title">
+                                            <h5>O que é nanotecnologia?</h5>
+                                        </div>
+
+                                        <div class="question-answer">
+                                            <p>A nanotecnologia prevê a proteção de ativos e a redução do seu tamanho
+                                                para que tenha uma eficácia maior. Partículas
+                                                menores podem permear melhor na folha e no solo fazendo com que os
+                                                ingredientes agroquímicos possuam eficácia melhor.
+                                                Além disso, a concentração do ativo pode ser reduzida e sua estabilidade
+                                                e mistura em água podem ser melhoradas.</p>
+                                        </div>
+                                    </a>
+
                                     <a href=""
                                         class="list-group-item list-group-item-action flex-column align-items-start active question-item">
 
                                         <div class="question-title">
-                                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                                            <h5>Qual é a missão/visão da empresa?</h5>
                                         </div>
 
                                         <div class="question-answer">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quod.
-                                                Pariatur sit minima ratione sequi, distinctio molestiae quae error, at
-                                                exercitationem modi non sapiente delectus veritatis nihil consequatur
-                                                fugiat
-                                                inventore.</p>
+                                            <p><b>Missão:</b> Pesquisar, desenvolver e produzir aditivos biológicos
+                                                utilizando
+                                                processos nanotecnológicos.</p>
+                                            <p><b>Visão:</b> Revolucionar o mercado de aditivos para a saúde humana,
+                                                animal e vegetal
+                                                valorizando a vida e aprimorando a
+                                                sustentabilidade nas cadeias produtivas.</p>
                                         </div>
 
                                     </a>
@@ -489,15 +509,21 @@
                                         class="list-group-item list-group-item-action flex-column align-items-start question-item">
 
                                         <div class="question-title">
-                                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                                            <h5>Qual o nosso princípal objetivo?</h5>
                                         </div>
 
                                         <div class="question-answer">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quod.
-                                                Pariatur sit minima ratione sequi, distinctio molestiae quae error, at
-                                                exercitationem modi non sapiente delectus veritatis nihil consequatur
-                                                fugiat
-                                                inventore.</p>
+                                            <p>Pesquisar, desenvolver e produzir aditivos biológicos, utilizando
+                                                nanotecnologia, atendendo seus requisitos técnicos e
+                                                superando suas expectativas. Considerando como questões internas
+                                                relevantes os suprimentos, colaboradores e equipamentos
+                                                e como questões externas a legislação vigente, aspectos econômicos e os
+                                                avanços tecnológicos. O trabalho da AllesNano é
+                                                direcionado para atender aos requisitos das partes interessadas:
+                                                clientes, colaboradores, fornecedores, comunidade local
+                                                e dos sócios. Empregando a NBR ABNT ISO 9001:2015 como seu sistema de
+                                                gestão da qualidade.
+                                            </p>
                                         </div>
                                     </a>
 
@@ -505,47 +531,22 @@
                                         class="list-group-item list-group-item-action flex-column align-items-start question-item">
 
                                         <div class="question-title">
-                                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                                            <h5>Qual nossos diferenciais?</h5>
                                         </div>
 
                                         <div class="question-answer">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quod.
-                                                Pariatur sit minima ratione sequi, distinctio molestiae quae error, at
-                                                exercitationem modi non sapiente delectus veritatis nihil consequatur
-                                                fugiat
-                                                inventore.</p>
-                                        </div>
-                                    </a>
-
-                                    <a href="#"
-                                        class="list-group-item list-group-item-action flex-column align-items-start question-item">
-
-                                        <div class="question-title">
-                                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                        </div>
-
-                                        <div class="question-answer">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quod.
-                                                Pariatur sit minima ratione sequi, distinctio molestiae quae error, at
-                                                exercitationem modi non sapiente delectus veritatis nihil consequatur
-                                                fugiat
-                                                inventore.</p>
-                                        </div>
-                                    </a>
-
-                                    <a href="#"
-                                        class="list-group-item list-group-item-action flex-column align-items-start question-item">
-
-                                        <div class="question-title">
-                                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                        </div>
-
-                                        <div class="question-answer">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quod.
-                                                Pariatur sit minima ratione sequi, distinctio molestiae quae error, at
-                                                exercitationem modi non sapiente delectus veritatis nihil consequatur
-                                                fugiat
-                                                inventore.</p>
+                                            <ul>
+                                                <li>Adquirir matérias-primas de fornecedores qualificados e que
+                                                    respeitam as normas ambientais;</li>
+                                                <li>Utilizar normas e equipamentos de segurança individuais e coletivos;
+                                                </li>
+                                                <li>Realizar pesquisa de satisfação anual com clientes e colaboradores;
+                                                </li>
+                                                <li>Tratar situações não conforme, resultando em ações corretivas e
+                                                    preventivas.</li>
+                                                <li>Promover treinamentos para nossos colaboradores como diferencial na
+                                                    busca constante da qualidade;</li>
+                                            </ul>
                                         </div>
                                     </a>
 
@@ -562,15 +563,13 @@
                                 Dúvidas
                             </h1>
                             <h2 class="display-4 text-center text-lg-right text-dark">Perguntas frequentes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis, accusantium
-                                delectus optio blanditiis sint! Inventore provident est reprehenderit vitae dolores
-                                quas. Suscipit architecto mollitia quisquam fuga sed consequatur ratione?</p>
-                            <div class="text-center text-lg-right">
-                                <a href="#contato" class="btn btn-lg btn-outline-secondary">
+                            <div class="text-center text-lg-right button-block">
+                                <a href="#cosmeticos" data-smoth="true" class="btn btn-lg btn-outline-secondary">
                                     <span><i class="fa-solid fa-arrow-left-long"></i></span>
                                     <span>Continue conhecendo</span>
                                 </a>
-                                <a href="#contato" class="btn btn-lg btn-primary">Entrar em contato</a>
+                                <a href="#contato" data-smoth="true" class="btn btn-lg btn-primary">Entrar em
+                                    contato</a>
                             </div>
                         </div>
                     </div>
@@ -582,8 +581,8 @@
         </section>
         <!-- Fim duvidas frequentes -->
 
-        <!-- Inicio seção seinao -->
-        <section id="" class="bg-white p-0">
+        <!-- Inicio seção cosmeticos -->
+        <section id="cosmeticos" class="bg-white p-0">
             <div class="container-fluid bg-image image-03 section">
 
                 <div class="row">
@@ -593,14 +592,15 @@
                         <div class="side-box side-left">
                             <h1
                                 class="display-1 text-center text-lg-left text-dark display-icon icon-primary icon-06 icon-left display-margin">
-                                cosméticos
+                                Cosméticos
                             </h1>
-                            <h2 class="display-4 text-center text-lg-left">cosméticos</h2>
+                            <h2 class="display-4 text-center text-lg-left">Produtos inovadores com resultados rápidos e
+                                efeitos duradouros.</h2>
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="text-center text-lg-left">
+                                    <div class="text-center text-lg-left button-block">
                                         <a href="#contato" class="btn btn-lg btn-primary">
-                                            <span>Formulário de contato</span>
+                                            <span>Entrar em contato agora</span>
                                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                                         </a>
                                     </div>
@@ -618,7 +618,7 @@
 
             </div>
         </section>
-        <!-- Fim seção seinao -->
+        <!-- Fim seção cosmeticos -->
 
         <!-- Inicio seção contato -->
         <section id="contato" class="container-fluid bg-white">
@@ -629,7 +629,7 @@
                         <h1 class="display-1 text-center text-lg-right display-icon icon-07 icon-right display-margin">
                             Contato
                         </h1>
-                        <h2 class="display-4 text-center text-lg-right text-dark">Estamos a disposição</h2>
+                        <h2 class="display-4 text-center text-lg-right text-dark">Estamos a sua disposição</h2>
                     </div>
                 </div>
 
@@ -723,7 +723,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 text-right">
+                            <div class="col-12 text-right button-block">
                                 <button class="btn btn-lg btn-outline-secondary" href="" type="reset">Limpar
                                     campos</button>
                                 <button class="btn btn-lg btn-primary" href="" type="submit">Enviar formulário</button>
@@ -778,19 +778,19 @@
                     <h5 class="featured-font block-title">Navegação</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#inicio" class="btn btn-link">Início</a>
+                            <a href="#inicio" data-smoth="true" class="btn btn-link">Início</a>
                         </li>
                         <li>
-                            <a href="#sobre" class="btn btn-link">Sobre</a>
+                            <a href="#sobre" data-smoth="true" class="btn btn-link">Sobre</a>
                         </li>
                         <li>
-                            <a href="#produtos" class="btn btn-link">Produtos</a>
+                            <a href="#produtos" data-smoth="true" class="btn btn-link">Produtos</a>
                         </li>
                         <li>
-                            <a href="#duvidas" class="btn btn-link">Dúvidas</a>
+                            <a href="#duvidas" data-smoth="true" class="btn btn-link">Dúvidas</a>
                         </li>
                         <li>
-                            <a href="#contato" class="btn btn-link">Contato</a>
+                            <a href="#contato" data-smoth="true" class="btn btn-link">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -876,16 +876,19 @@
     <!-- Não mexer daqui para baixo -->
 
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="static/js/lib/jquery.min.js"></script>
+
+    <!-- Bootstrap JS-->
+    <script src="static/js/lib/bootstrap.bundle.min.js"></script>
 
     <!-- Owl Carrosel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="static/js/lib/owl.carousel.min.js"></script>
 
     <!-- Sweetalert-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.19/sweetalert2.all.min.js"></script>
+    <script src="static/js/lib/sweetalert2.all.min.js"></script>
 
     <!-- Jquery mask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="static/js/lib/jquery.mask.min.js"></script>
 
     <!-- Scripts JS-->
     <script src="static/js/scripts.js"></script>

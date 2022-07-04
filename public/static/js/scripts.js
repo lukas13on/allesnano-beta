@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    navbarFixes();
     smothAnchor();
     scrollPsy();
     carroselSegmentos();
@@ -40,15 +41,18 @@ function carroselSegmentos() {
 function headerClass() {
     var top = $(window).scrollTop();
     if (top === 0) {
-        $("body").addClass("scroll-top").removeClass("scroll-scrolled");
+        $(document.body).addClass("scroll-top").removeClass("scroll-scrolled");
     } else {
-        $("body").addClass("scroll-scrolled").removeClass("scroll-top");
+        $(document.body).addClass("scroll-scrolled").removeClass("scroll-top");
     }
 }
 
 function scrollPsy() {
     var currentTop = $(window).scrollTop();
-    var headerTop = $("header").outerHeight();
+    var padTop = parseInt($(".navbar").css("padding-top"));
+    var padBot = parseInt($(".navbar").css("padding-top"));
+    var navHeader = $(".navbar-header").height();
+    var headerTop = navHeader + padBot + padTop;
     var elems = $('section[id]');
     elems.each(function (index) {
         var elemTop = $(this).offset().top - headerTop;
@@ -84,11 +88,12 @@ function smothAnchor() {
         e.preventDefault();
         var id = $(this).attr("href").replace("#", "");
         var el = $("#" + id);
-        var headerTop = $("header").outerHeight();
+        var padTop = parseInt($(".navbar").css("padding-top"));
+        var padBot = parseInt($(".navbar").css("padding-top"));
+        var navHeader = $(".navbar-header").height();
+        var headerTop = navHeader + padBot + padTop;
         var fixHeaderTop = 10;
-        if ($("body").hasClass("scroll-top")) {
-            // diferenca das logos
-            // 110 - 80 = 30
+        if ($(document.body).hasClass("scroll-top")) {
             headerTop = headerTop - 30;
         }
         headerTop = headerTop - fixHeaderTop;
@@ -104,4 +109,18 @@ function scrollSmoth(offset, delay, transition, callback) {
     $([document.documentElement, document.body]).animate({
         scrollTop: offset
     }, delay, transition, callback);
+}
+
+function navbarFixes() {
+    $(".navbar .nav-link").on("click", function () {
+        $("#navegacao").collapse("hide");
+    });
+
+    $('#navegacao').on('hide.bs.collapse', function () {
+        $(document.body).removeClass("over-menu");
+    });
+
+    $('#navegacao').on('show.bs.collapse', function () {
+        $(document.body).addClass("over-menu");
+    });
 }

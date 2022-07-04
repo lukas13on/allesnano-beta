@@ -1,4 +1,4 @@
-body{
+body {
     font-size: 18px !important;
     font-family: 'Source Sans Pro', sans-serif !important;
 }
@@ -8,11 +8,11 @@ body{
     font-weight: bold;
 }
 
-.form-control, .navbar-nav .nav-link, .alert{
+.form-control, .navbar-nav .nav-link, .alert {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.btn{
+.btn {
     font-weight: bold;
 }
 
@@ -21,7 +21,7 @@ body{
     transition: all 0.25s linear;
 }
 
-.bg-success{
+.bg-success {
     background-color: aquamarine;
 }
 
@@ -38,7 +38,7 @@ header nav {
 }
 
 section, .section {
-    padding: 10vw 0 !important;
+    padding: 10vw 5vw !important;
     display: block;
     overflow: hidden;
 }
@@ -47,8 +47,8 @@ section, .section {
     padding: 20px !important;
 }
 
-#parceiros{
-    padding:2.5vw !important;
+#parceiros {
+    padding: 2.5vw !important;
     border-bottom: 0 !important;
 }
 
@@ -56,12 +56,12 @@ section, .section {
     text-align: center;
 }
 
-#rodape{
+#rodape {
     padding-top: 0;
     border-top: 1px solid #dee2e6;
 }
 
-#seinao{
+#seinao {
     padding: 0px !important;
 }
 
@@ -69,6 +69,7 @@ section, .section {
     /* background-image: url("../img/cover/01.jpg"); */
     background-size: cover;
     background-position: center center;
+    padding-top: 150px !important;
 }
 
 .card-image img {
@@ -90,14 +91,18 @@ section, .section {
     background-repeat: no-repeat;
 }
 
-
 .google-map {
     /* padding-top: 15px; */
 }
 
-.google-map .map-controls {position: absolute;top: 10px;right: 25px;}
+.google-map .map-controls {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
 
-.google-map .map-frame {}
+.google-map .map-frame {
+}
 
 .map-controls a {
     border-radius: 0.25rem;
@@ -130,7 +135,8 @@ section, .section {
     background-color: hsl(32deg 100% 70%) !important;
 }
 
-section#parceiros {}
+section#parceiros {
+}
 
 .side-box.side-left {
     padding-left: 10vw;
@@ -194,12 +200,11 @@ section#parceiros {}
     border-color: #1ea838;
 }
 
-
 .bg-primary {
     background-color: #ff8a00 !important;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
@@ -240,16 +245,18 @@ section#parceiros {}
     background-color: #fff3e5;
 }
 
-#solucoes .card .card-body {
-    display: none;
-    background-color: #fff;
-}
-
-#solucoes .card:hover .card-body {
-    display: block;
+#produtos .card .card-body {
     position: absolute;
     bottom: 0;
+    left: -100%;
     width: 100%;
+    transition: all 0.25s linear;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+}
+
+#produtos .card:hover .card-body {
+    left: 0;
 }
 
 #segmentos .card-title {
@@ -294,31 +301,31 @@ section#parceiros {}
 }
 
 .display-icon.icon-01:before {
-    content:"\f10e";
+    content: "\f10e";
 }
 
 .display-icon.icon-02:before {
-    content:"\e2cd";
+    content: "\e2cd";
 }
 
 .display-icon.icon-03:before {
-    content:"\e596";
+    content: "\f02c";
 }
 
 .display-icon.icon-04:before {
-    content:"\f004";
+    content: "\f004";
 }
 
 .display-icon.icon-05:before {
-    content:"\f059";
+    content: "\f059";
 }
 
 .display-icon.icon-06:before {
-    content:"\f5d0";
+    content: "\f5d0";
 }
 
 .display-icon.icon-07:before {
-    content:"\f1d8";
+    content: "\f058";
 }
 
 .display-icon:before {
@@ -375,9 +382,10 @@ section#parceiros {}
     height: auto;
 }
 
-.image-04 {}
+.image-04 {
+}
 
-#solucoes .card-title {
+#produtos .card-title {
     color: #ff8a00;
     font-weight: bold;
 }
@@ -442,8 +450,7 @@ section#parceiros {}
     left: 0;
     transform: translate(0, -50%);
     background-size: cover;
-    font-family:
-    "Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 16px;
     content: "\f054";
@@ -472,6 +479,11 @@ header {
     box-shadow: none;
 }
 
+.scroll-top.over-menu header {
+    background-color: #ffffff !important;
+    box-shadow: 0px 6px 6px 0px rgb(0 0 0 / 10%) !important;
+}
+
 .scroll-top .navbar-brand .brand-img {
     height: 110px;
 }
@@ -495,4 +507,209 @@ header {
 
 #contato .invalid-feedback, #contato .valid-feedback {
     margin: 4px 0 0 0;
+}
+
+.navbar .navbar-header .navbar-toggler {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border-color: #ff8a00;
+    color: #ff8a00;
+    background-color: #ffffff;
+}
+
+.navbar .navbar-header {
+    position: relative;
+    width: auto;
+    display: flex;
+}
+
+.navbar-toggler .open {
+    display: none;
+}
+
+.navbar-toggler .close {
+    display: block;
+}
+
+.navbar-toggler.collapsed .open {
+    display: block;
+}
+
+.navbar-toggler.collapsed .close {
+    display: none;
+}
+
+.navbar .navbar-header .navbar-toggler i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+}
+
+#produtos .card {
+    overflow: hidden;
+}
+
+#produtos .card:before {
+    content: "\f245";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: cover;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 16px;
+    color: #ff8a00;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px 11px;
+    opacity: 1;
+    box-shadow: 0px 6px 6px 0px rgb(0 0 0 / 10%);
+    transition: all 0.25s linear;
+}
+
+#produtos .card:hover:before {
+    opacity: 0;
+}
+
+#produtos .card:before{
+    animation-name: hovercard;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+    #produtos .card .card-text {
+    font-size: 16px;
+}
+
+/* Responsivo */
+
+@media (max-width:359.98px){
+    #produtos .card-img-top{
+        min-height: 35vh;
+    }
+        #produtos .card .card-text{
+    font-size: 12px;
+}
+    section, .section{
+        padding: 10vw 5vw !important;
+    }
+    .display-1{font-size: 2rem;}
+    .display-4{font-size: 1.25rem;}
+}
+
+@media (min-width:360px){
+
+}
+
+
+@media (min-width:360px) and (max-width:575.98px){
+        #produtos .card .card-text{
+    font-size: 12px;
+}
+    .display-1{font-size: 2.5rem;}
+    .display-4{font-size: 2rem;}
+}
+
+@media (min-width:575.98px){
+}
+
+@media (max-width:576px){
+    .side-left,.side-right{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+    .display-1{font-size: 4rem;}
+    .display-4{font-size: 2.5rem;}
+}
+
+@media (max-width:767.98px){
+    .button-block .btn {
+        display: block;
+        margin: 6px;
+    }
+}
+
+@media (min-width:768px){
+    
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+    section, .section{
+        padding: 10vw 15vw !important;
+    }
+    .display-1{font-size: 5rem;}
+    .display-4{font-size: 3rem;}
+}
+
+@media (max-width: 991.98px) {
+    .reverse-mobile{
+        flex-direction: column-reverse;
+    }
+    .image-card{
+        margin-bottom: 125px;
+    }
+    .navbar-brand .brand-img{
+        height: 70px !important;
+    }
+    .bg-image{
+        padding-bottom:0px !important;;
+    }
+    .parallax{
+        height: 40vh;
+        margin-bottom: 50px;
+    }
+    #inicio{padding-top: calc(5vh + 130px) !important;}
+    
+    .navbar .navbar-header {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        margin: 20px 0;
+    }
+
+    .btn.focus, .btn:focus {
+        box-shadow: 0 0 0 0.2rem rgb(255 138 0 / 25%);
+    }
+
+    #produtos .card .card-body {
+        left: 0;
+    }
+    #produtos .card:before, #produtos .card:hover:before{
+        opacity: 0 !important;
+    }
+}
+
+@media (min-width:992px){
+        .display-1{font-size: 4rem;}
+    .display-4{font-size: 2.75rem;}
+    .scroll-top .navbar-brand .brand-img{
+        height:110px;
+    }
+}
+
+@keyframes hovercard {
+  from {transform:rotate(0deg)}
+  to {transform:rotate(-30deg)}
+}
+
+
+.button-block .btn {
+    display: block;
+    margin: 6px 0;
+    width: 100%;
 }
